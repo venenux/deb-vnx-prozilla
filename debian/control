@@ -1,0 +1,36 @@
+Source: prozilla
+Section: net
+Priority: optional
+Maintainer: Master Vitronic <vitronic2@gmail.com>
+Build-Depends: debhelper, autotools-dev, libglib2.0-dev, libgl1-mesa-glx, mime-support, libxcb1-dev, gettext, libxdmcp6, libncurses5-dev, libsm6, libcroco3, libasound-dev, libxt-dev, libxml2, libxau6, libpcre3, libice6, gawk, autoconf, automake1.4
+Standards-Version: 3.9.2
+Homepage: http://prozilla.en.malavida.com/linux
+#Vcs-Git: git://git.debian.org/collab-maint/prozilla.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/prozilla.git;a=summary
+
+Package: prozilla
+Architecture: any
+Depends: libprozilla0, ${shlibs:Depends}, ${misc:Depends}, gawk, mime-support
+Recommends: apt-proz
+Description: ProZilla the Download Accelerator for Linux
+ ProZilla is a download accelerator for Linux which gives you a 200% to
+ 300% improvement (or possibly more depending on your connection) in your
+ file downloading speeds.
+
+Package: libprozilla0
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libglib2.0-0, libgl1-mesa-glx, libxcb1, libxdmcp6, libsm6, libcroco3, libasound2, libxml2, libxau6, libpcre3, libice6
+Recommends: prozilla
+Suggests: libprozilla-dev
+Description: ProZilla Download Accelerator library for Linux (shared)
+ ProZilla is a download accelerator for Linux which gives you a 200% to
+ 300% improvement (or possibly more depending on your connection) in your
+ file downloading speeds.
+
+Package: libprozilla-dev
+Architecture: any
+Depends: libprozilla0, ${shlibs:Depends}, libncurses5-dev, libxt-dev, ${misc:Depends}
+Description: ProZilla Download Accelerator library for Linux (devel)
+ ProZilla is a download accelerator for Linux which gives you a 200% to
+ 300% improvement (or possibly more depending on your connection) in your
+ file downloading speeds.

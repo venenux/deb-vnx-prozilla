@@ -1,0 +1,13 @@
+prozilla (2.0.4~vnx-1) unstable; urgency=low
+
+  * Initial release
+    + redone the VITRONIC's package for VenenuX
+  * debian/control:
+    + recommends the tahutek's apt addon package
+    + split and made library packages
+    + added right depends to packages
+    + force build on older distros by added build-depend on automake1.4
+  * debian/rules:
+    + libprozilla:configure*: enable shared lib , parse --enable-shared=yes
+
+ -- PICCORO Lenz McKAY <mckaygerhard@gmail.com>  Sat, 30 Aug 2014 07:35:21 -0430

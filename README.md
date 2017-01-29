@@ -1,3 +1,12 @@
+Prozilla : firts Download Accelerator for Linux exists
+======================================================
+
+Original software and website was orpahned this its a mantain only repository.
+
+Original website: http://prozilla.delrom.ro/ 
+Original new Website: http://prozilla.genesys.ro/?p=download
+
+
 		ProZilla the Download Accelerator for Linux
                               GUI 2.04 Release
                 ============================================
